@@ -6,7 +6,7 @@ import { ProductContext } from '../contexts/ProductContext';
 
 const Home = () => {
   const {products}=useContext(ProductContext) 
-  console.log(products)
+  console.log('haz')
   const filteredProducts=products?.filter(item=>{
     return (
       item.category===

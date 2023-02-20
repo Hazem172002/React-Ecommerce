@@ -6,6 +6,7 @@ const Product = ({product}) => {
 
   const {id,image,category,title,price}=product
   const {addToCart}=useContext(CartContext)
+console.log('haz')
   return <div>
     <div className='border border-[#e4e4e4] h-[300px] relative overflow-hidden group transition'>
       <div className='w-full h-full flex justify-center items-center'>

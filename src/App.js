@@ -9,10 +9,10 @@ const App = () => {
   return <div className='overflow-hidden'>
     <Router>
       <Header />
-      <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/product/:id' element={<ProductDetails />}/>
-      </Routes>
+     
+         <Home />
+
+    
       <Sidebar />
       <Footer />
     </Router>
