@@ -5,6 +5,7 @@ import App from './App';
 import ProductProvider from './contexts/ProductContext';
 import SidebarProvider from './contexts/SidebarContext';
 import CartProvider from './contexts/CartContext';
+import { HashRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,10 @@ root.render(
         <CartProvider>
      <ProductProvider>
      <React.StrictMode>
-    <App />
+      <Router>
+      <App />
+      </Router>
+
   </React.StrictMode>
   </ProductProvider>
   </CartProvider>
