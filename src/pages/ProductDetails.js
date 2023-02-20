@@ -14,7 +14,7 @@ const ProductDetails = () => {
   return <section className='h-screen pt-32 pb-12 lg:py-32'>
     <div className='container mx-auto'>
       <div className='flex flex-col md:flex-row items-center text-center md:text-left gap-10'>
-        <div><img src={image} className='max-w-[200px] lg:max-w-sm'/></div>
+        <div><img src={image} className='max-w-[200px] md:max-w-[300px]'/></div>
         <div className=' flex flex-col  justify-between gap-2'>
           <div className='font-semibold text-3xl'>{title}</div>
           <div className='text-red-500'>${price}</div>
