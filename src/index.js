@@ -9,6 +9,7 @@ import { HashRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <Router>
      <SidebarProvider>
         <CartProvider>
      <ProductProvider>
@@ -21,5 +22,6 @@ root.render(
   </ProductProvider>
   </CartProvider>
   </SidebarProvider>
+  </Router>
 
 );
