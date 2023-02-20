@@ -5,23 +5,25 @@ import App from './App';
 import ProductProvider from './contexts/ProductContext';
 import SidebarProvider from './contexts/SidebarContext';
 import CartProvider from './contexts/CartContext';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
+ 
      <SidebarProvider>
         <CartProvider>
      <ProductProvider>
      <React.StrictMode>
-
+      <Router>
       <App />
+      </Router>
+
 
 
   </React.StrictMode>
   </ProductProvider>
   </CartProvider>
   </SidebarProvider>
-  </Router>
+
 
 );

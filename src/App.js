@@ -7,10 +7,10 @@ import Home from './pages/Home';
 import ProductDetails from './pages/ProductDetails';
 const App = () => {
   return <div className='overflow-hidden'>
-    <Router >
+    <Router basename='/React-Ecommerce'>
       <Header />
       <Routes>
-        <Route   path='/' element={<Home />}/>
+        <Route exact  path='/React-Ecommerce' element={<Home />}/>
         <Route path='/product/:id' element={<ProductDetails />}/>
       </Routes>
       <Sidebar />
